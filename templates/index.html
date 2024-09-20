@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/jpeg, image/png" required>
+        <input type="submit" value="Upload Image">
+    </form>
+{% endblock %}
